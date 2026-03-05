@@ -108,9 +108,6 @@ def convert_pdf_to_markdown(pdf_path, output_dir):
                     md_filename = next((name for name in z.namelist() if name.endswith('.md')), None)
                     if md_filename:
                         md_content = z.read(md_filename).decode('utf-8')
-                        img_dir = out_path / 'images'
-                        img_dir.mkdir(parents=True, exist_ok=True)
-                        
                         image_count = 0
                         for filename in z.namelist():
                             if filename.startswith('images/') or filename.startswith('auto/') or filename.endswith('.jpg') or filename.endswith('.png'):
@@ -118,10 +115,10 @@ def convert_pdf_to_markdown(pdf_path, output_dir):
                                 base_name = Path(filename).name
                                 if not base_name: continue
                                 
-                                with open(img_dir / base_name, 'wb') as img_f:
+                                with open(out_path / base_name, 'wb') as img_f:
                                     img_f.write(file_data)
                                 
-                                md_content = md_content.replace(filename, f"images/{base_name}")
+                                md_content = md_content.replace(filename, base_name)
                                 image_count += 1
                         
                         with open(out_path / 'document.md', 'w', encoding='utf-8') as f:
