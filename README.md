@@ -18,7 +18,7 @@ Through this workflow, the context token consumption of Large Language Models (L
 
 ## Prerequisites
 
-1. You need a MinerU (TextIn) API Token.
+1. You need a MinerU (TextIn) API Token. **Note: The Token is used to verify your account identity when calling the MinerU API. It is valid for 90 days, after which it must be recreated as renewal is not supported.**
 2. Python 3.7+ installed.
 
 ## Installation
@@ -35,16 +35,14 @@ Through this workflow, the context token consumption of Large Language Models (L
    ```
 
 3. Configure Environment Variable:
-   Set your API Token as the environment variable `MINERU_API_TOKEN`.
-   
-   - **Windows (PowerShell)**:
-     ```powershell
-     $env:MINERU_API_TOKEN="your_token_here"
-     ```
-   - **Linux/macOS**:
+   Set your API Token as the environment variable `MINERU_API_TOKEN`. **This must be configured as a persistent system/user environment variable** so that the AI Agent can read it from any working directory, rather than needing to set it every time you open a new terminal.
+
+   - **Windows**: Search for "Environment Variables" in the Start menu -> Edit the system environment variables -> Environment Variables -> Add a new User variable named `MINERU_API_TOKEN` with your token.
+   - **Linux/macOS**: Add the following line to your shell profile file (e.g., `~/.bashrc`, `~/.zshrc`):
      ```bash
      export MINERU_API_TOKEN="your_token_here"
      ```
+     Then, run `source ~/.bashrc` or `source ~/.zshrc` to apply the changes.
 
 ## Using as an Agent Skill
 
