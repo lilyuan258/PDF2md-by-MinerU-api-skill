@@ -50,6 +50,8 @@ Through this workflow, the context token consumption of Large Language Models (L
 Link or place this folder in your Agent's (e.g., Gemini CLI) `skills` directory. When a user requests to read a PDF, the Agent will automatically invoke the instructions within this skill.
 
 > **Note**: The exact workflow detailing how the Python script is called to convert and read files is defined in `SKILL.md`.
+> 
+> 💡 **Pro Tip**: Through multiple experiments, the author has found that explicitly emphasizing **"don't forget to call the skill"** in your prompt ensures a 100% trigger rate for the skill. More importantly, it significantly increases the probability that the agent will actually read the generated images.
 
 ## Running Manually
 
