@@ -27,6 +27,7 @@
 
    ```bash
    git clone https://github.com/lilyuan258/PDF2md-by-MinerU-api-skill.git
+   cd PDF2md-by-MinerU-api-skill
    ```
 2. 安装依赖：
 

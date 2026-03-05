@@ -26,6 +26,7 @@ Through this workflow, the context token consumption of Large Language Models (L
 1. Clone this project:
    ```bash
    git clone https://github.com/lilyuan258/PDF2md-by-MinerU-api-skill.git
+   cd PDF2md-by-MinerU-api-skill
    ```
 
 2. Install dependencies:
