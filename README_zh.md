@@ -35,13 +35,14 @@
    pip install -r requirements.txt
    ```
 3. 配置环境变量：
-   将你的 API Token 设置为环境变量 `MINERU_API_TOKEN`。**你需要将其配置为系统级的持久环境变量**，这样当 AI Agent 在任何工作目录被唤醒时，都能够自动读取到该 Token，而不需要每次打开终端都重新配置。
+   将你的 API Token 设置为环境变量 `MINERU_API_TOKEN`。**你需要将其配置为系统级的持久环境变量**，这样当 AI Agent 在任何工作目录被唤醒时，都能够自动读取到该 Token，而不需要每次打开终端都重新配置，但是MinerU的API Token 90天到期后需要重新申请一个。
 
    - **Windows**: 在开始菜单搜索“环境变量” -> 编辑系统环境变量 -> 环境变量 -> 新建一个用户变量，变量名为 `MINERU_API_TOKEN`，变量值为你的 Token。
    - **Linux/macOS**: 将以下命令添加到你的终端配置文件中（例如 `~/.bashrc` 或 `~/.zshrc`）：
      ```bash
      export MINERU_API_TOKEN="your_token_here"
      ```
+
      然后运行 `source ~/.bashrc` 或 `source ~/.zshrc` 使其生效。
 
 ## 作为 Agent Skill 使用

@@ -24,24 +24,25 @@ Through this workflow, the context token consumption of Large Language Models (L
 ## Installation
 
 1. Clone this project:
+
    ```bash
    git clone https://github.com/lilyuan258/PDF2md-by-MinerU-api-skill.git
    cd PDF2md-by-MinerU-api-skill
    ```
-
 2. Install dependencies:
+
    ```bash
    pip install -r requirements.txt
    ```
-
 3. Configure Environment Variable:
-   Set your API Token as the environment variable `MINERU_API_TOKEN`. **This must be configured as a persistent system/user environment variable** so that the AI Agent can read it from any working directory, rather than needing to set it every time you open a new terminal.
+   Set your API Token as the environment variable `MINERU_API_TOKEN`. **This must be configured as a persistent system/user environment variable** so that the AI Agent can read it from any working directory, rather than needing to set it every time you open a new terminal.However, MinerU's API Token needs to be reapplied for after 90 days when it expires.
 
    - **Windows**: Search for "Environment Variables" in the Start menu -> Edit the system environment variables -> Environment Variables -> Add a new User variable named `MINERU_API_TOKEN` with your token.
    - **Linux/macOS**: Add the following line to your shell profile file (e.g., `~/.bashrc`, `~/.zshrc`):
      ```bash
      export MINERU_API_TOKEN="your_token_here"
      ```
+
      Then, run `source ~/.bashrc` or `source ~/.zshrc` to apply the changes.
 
 ## Using as an Agent Skill
@@ -59,6 +60,7 @@ python scripts/convert_pdf.py <Input_PDF_Path> <Output_Directory_Name>
 ```
 
 Example:
+
 ```bash
 python scripts/convert_pdf.py ./sample.pdf ./sample_md_output
 ```
