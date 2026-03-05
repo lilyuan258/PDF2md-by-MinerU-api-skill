@@ -4,7 +4,7 @@
 
 ---
 
-A Skill designed for AI Agents (like Gemini CLI) to automatically call the official API of [MinerU](https://github.com/opendatalab/MinerU) (TextIn) when reading user-uploaded PDF documents. It converts PDFs into machine-friendly Markdown files.
+A Skill designed for AI Agents (like Claude Code、Antigravity、Cursor、Gemini CLI) to automatically call the official API of [MinerU](https://github.com/opendatalab/MinerU) (TextIn) when reading user-uploaded PDF documents. It converts PDFs into machine-friendly Markdown files.
 
 Through this workflow, the context token consumption of Large Language Models (LLMs) is significantly reduced. More importantly, it enables the machine to **accurately read charts, tables, and complex layouts**, preventing the massive loss of information common in traditional text-only extraction tools.
 
