@@ -18,7 +18,7 @@
 
 ## 前置条件
 
-1. 你需要拥有一个 MinerU (TextIn) 的 API Token。**注意：Token 用于验证您调用 MinerU API 时的账户身份。有效期 90 天，到期后需重新创建，不支持续期。**
+1. 你需要拥有一个 MinerU (TextIn) 的 API Token。**注意：Token 用于验证你调用 MinerU API 时的账户身份。有效期 90 天，到期后需重新创建，不支持续期。**
 2. 安装 Python 3.7+。
 
 ## 安装
