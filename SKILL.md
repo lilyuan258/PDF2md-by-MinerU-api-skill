@@ -20,8 +20,8 @@ This skill is designed to handle PDF files effectively by converting them into M
 4. **转换 PDF**: 运行打包好的 Python 脚本，将 PDF 转换为 Markdown 文档及包含图片的文件夹。
    - 运行命令: `python <转换脚本的绝对路径> <PDF的路径> "<输出文件夹名称>"`
    - 例如：`python C:\path\to\skill\scripts\convert_pdf.py 论文A.pdf "论文A md文档"`
-5. **阅读转换后的 Markdown**: 转换完成后，读取对应输出文件夹（如 `论文A md文档`）中新生成的 `document.md` 文件。
-6. **完成用户需求**: 根据 Markdown 文件的内容，回答用户的原始请求或进行综合分析。如果用户需要看图，Markdown 文件中会引用相应 `images` 文件夹下的图片。
+5. **阅读转换后的 Markdown及生成的images**: 转换完成后，利用你的**多模态能力**，读取对应输出文件夹（如 `论文A md文档`）中新生成的 `document.md` 文件与生成的**所有images（注意，生成的md文档会在图片的对应位置附上该图片的路径）**。
+6. **完成用户需求**: 利用你的**多模态能力**，输出根据 **Markdown 文件的内容**及其的所有**图片与表格**（生成的md文档会在图片、表格上下文对应的位置用链接的方式附上该位置图片、表格的路径），回答用户的原始请求或进行综合分析。
 
 ## 重要指令 (Critical Instructions)
 
